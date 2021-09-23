@@ -1,0 +1,9 @@
+{
+    "name": "Diplomado",
+    "short_name": "DiplomadoPWA",
+    "lang": "es-CO",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "#a7ccbd"
+}
