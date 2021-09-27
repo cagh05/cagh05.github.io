@@ -12,7 +12,8 @@ self.addEventListener("activate", (event) =>
 self.addEventListener("fetch", (event) => event.respondWith(onFetch(event)));
 
 const cacheNamePrefix = "offline-cache-";
-const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
+// const cacheName = `${cacheNamePrefix}${self.assetsManifest.version}`;
+const cacheName = `${cacheNamePrefix}`;
 const offlineAssetsInclude = [
   /\.dll$/,
   /\.pdb$/,
