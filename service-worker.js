@@ -50,7 +50,9 @@ async function onInstall(event) {
   //   )
   //   .map((asset) => new Request(asset.url));
   const assetsRequests = {}
-  await caches.open(cacheName).then((cache) => cache.addAll(assetsRequests));
+  await caches.open(cacheName).then((cache) => cache.addAll(assetsRequests)).catch(() => {
+      console.log("Error downloaded all caches!");
+    });;
 }
 
 async function onActivate(event) {
